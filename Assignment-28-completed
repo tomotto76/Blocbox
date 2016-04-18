@@ -134,12 +134,12 @@
  </section>
  
 
- <!-- Additional Sign Up -->
-  <section class="signup">
-    <div class="container">
-      <h2>Sign Up Today!</h2>
-      <p>Join 100,000 satisfied users and click below to start your free trial.</p>
-        <a href="signup.html" class="btn">Start Your Free Trial!</a>
+ <!-- Another Call to Action -->
+  <section>
+    <div class="another">
+      <h2>Let's get organized!</h2>
+      <p>See what blocbox can do for you!</p>
+      <a href="signup.html" class="btn">Start Your Free Trial!</a>
     </div>
   </section>
 </main> 
