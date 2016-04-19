@@ -120,12 +120,12 @@ html, body{
    position:flex;
  }
  header .hero h1 {
-   font-size:48px;
+   font-size:28px;
    font-weight: normal;
    margin:95px 0 0;
  }
  header .hero p {
-   font-size: 22px;
+   font-size: 16px;
    line-height: 26px;
    font-weight: 100;
    margin:10px 0 40px;
