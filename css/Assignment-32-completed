@@ -38,37 +38,28 @@ html, body{
  .one-half, .one-third, .one-fourth {
    width:96%;
    float:left;
-   position: relative;
+   position:relative;
    min-height: 1px;
    margin:0 2% 20px;
  }
- 
-@media (min-width: 320px) {
-   .container, {
+ @media (min-width: 320px) {
+   .container {
      width: 300px;
    }
-   .one-half {
-      display: block;
-      height: auto;
-      max-width: 46%;
-   }
  }
+
  @media (min-width: 768px) {
-   .container, {
+   .container {
      width: 750px;
-   }
-   .one-half {
-      width: 46%;
    }
  }
  @media (min-width: 992px) {
    .container {
      width: 970px;
    }
-   .one-half {   
-     width: 46%; 
+   .one-half {
+     width:46%;
    }
-
    .one-third {
      width:29.33333%;
    }
@@ -136,12 +127,8 @@ html, body{
  }
  header .hero img {
    display: block;
-   height: auto;
-   max-width: 100%;
    margin:3em auto 0;
  }
- 
-
 
  /* BUTTONS */
  .btn {
@@ -349,53 +336,6 @@ html, body{
    margin: 0 auto;
    display: block;
  }
-
- @media (min-width: 320px) {
-   footer {
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-     height: 100px;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-   }
-   footer .right-footer-block {
-     background-color: #3498DB;
-     position: relative;
-   }
-   footer .logo{
-     padding: 2em 0 2em 1.5em;
-     position: relative;
-   }
- }
-
- @media (min-width: 768px) {
-   footer {
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-     height: 100px;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-   }
-   footer .right-footer-block {
-     background-color: #3498DB;
-     position: relative;
-   }
-   footer .logo{
-     padding: 2em 0 2em 1.5em;
-     display: block;
-     height: auto;
-     max-width: 100%;
-     float: left;
-   }
- }
-
-
 
  @media (min-width: 992px){
    footer{
