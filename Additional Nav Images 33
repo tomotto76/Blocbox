@@ -50,33 +50,28 @@
          <h1>All Items</h1>
          <a href="#" class="btn">+ Add</a>
        </div>
+     <div id="wrapper">
+        <div class="container">
+    <img src="images/bench">
+    <p>This is image 1</p>
+  </div>
+  <div class="container">
+    <img class="images/lookingup" src="images/lookingup">
+    <p>This is image 2</p>
+  </div>
+  <div class="container">
+    <img src="images/peoplecity">
+    <p>This is image 3</p>
+  </div>
+</div>
      </div>
-     <div class="container">
-       <div class="content-item">
-         <div class="item-box">
-         <img src="images/bench-black-and-white-city-new-york.jpg">
-         </div>
-       </div>
-       </div>
-       <div class="content-item">
-         <div class="item-box">
-         <img src="images/black-and-white-city-man-people-medium.jpg">
-         </div>
-       </div>
-       <div class="content-item">
-       <div class="content-item">
-         <div class="item-box">
-         <img src="images/pexels-photo-26738.jpg">
-         </div>
-       </div>
-       </div>    
-       <div class="content-item">
-         <div class="item-box">
-         <img src="images/city-new-york-skyscrapers-top-large.jpg">
-         </div>
-       </div>
-      
-   </section>
+
+
+
+
+
+
+
  </main>
  </body>
  </html>
