@@ -575,7 +575,25 @@ html, body{
    margin:5px 0 0;
  }
 
+/* unvisited link */
+nav .left-nav .items:link {
+    color: green;
+}
 
+/* visited link */
+nav .left-nav .items:visited {
+    color: green;
+}
+
+/* mouse over link */
+nav .left-nav .items:hover {
+    color: red;
+}
+
+/* selected link */
+nav .left-nav .items:active {
+    color: yellow;
+}
 
 
 
