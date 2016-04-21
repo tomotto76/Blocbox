@@ -4,7 +4,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
-   <title>Dashboard Images | Blocbox</title>
+   <title>Dashboard | Blocbox</title>
 
    <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Varela+Round' rel='stylesheet' type='text/css'>
@@ -44,34 +44,39 @@
 
    <main role="main">
    <!-- Benefits -->
+   
    <section class="content">
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
          <a href="#" class="btn">+ Add</a>
        </div>
-     <div id="wrapper">
-        <div class="container">
-    <img src="images/bench">
-    <p>This is image 1</p>
-  </div>
-  <div class="container">
-    <img class="images/lookingup" src="images/lookingup">
-    <p>This is image 2</p>
-  </div>
-  <div class="container">
-    <img src="images/peoplecity">
-    <p>This is image 3</p>
-  </div>
-</div>
-     </div>
+   
+    <div id="contentbox" style="margin: 0px auto; width: 100%">
+       
+       <div id="column1" style="float: left; margin:25px; width:25%">
+         <img src="images/bench.jpg">
+       </div>
+       
+       
+       
+       <div id="column1" style="float: left; margin:25px; width:25%">
+         <img src="images/lookingup.jpg">
+       </div>
 
-
-
-
-
-
-
+       
+       
+       <div id="column1" style="float: left; margin:25px; width:25%">
+         <img src="images/peoplecity.jpg">
+       </div>
+       
+             
+       
+       <div id="column1" style="float: left; margin:25px; width:25%">
+         <img src="images/viewfromtop.jpg">
+       </div>
+    </div> 
+    
+   </section>
  </main>
  </body>
- </html>
