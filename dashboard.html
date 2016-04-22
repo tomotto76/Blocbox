@@ -14,7 +14,8 @@
 <!-- CSS -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/dropit.css">
 
 
 </head>
@@ -27,7 +28,7 @@
  <!-- Left Nav -->
  <nav id="left-nav" class="left-nav">
      <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
-     <div class="items:active">
+     <div class="items">
        <p>Items</p>
        <ul>
          <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
@@ -45,8 +46,17 @@
       <div class="settings">
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
      <p>Joey Kirk</p>
-     <a href="#"><i class="fa fa-cog"></i></a>
-   </div>
+     <ul class="menu">
+            <li>
+              <a href="#"i class="fa fa-cog">fa fa-cog</i></a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
+                  <li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
    </nav>
 
    <main role="main">
@@ -55,7 +65,6 @@
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
-         <a href="#" class="btn">+ Add</a>
          <ul class="menu">
             <li>
               <a href="#" class="btn">+ Add</a>

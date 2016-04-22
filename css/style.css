@@ -495,6 +495,7 @@ html, body{
    display: inline-block;
  }
  .left-nav .settings p {
+   color: #FFFFFF;
    display: inline-block;
    vertical-align: top;
    padding-top: 8px;
@@ -508,7 +509,12 @@ html, body{
    float: right;
    margin-right:10px;
    margin-top:8px;
- }
+  }
+
+  .fa.fa-cog {
+    
+    
+  }
 
  /* CONTENT */
  .content {
