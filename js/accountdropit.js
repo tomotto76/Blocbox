@@ -1,39 +1,39 @@
 ;(function($) {
 
-    $.fn.dropit = function(method) {
+    $.fn.acctdropit = function(method) {
 
         var methods = {
 
             init : function(options) {
-                this.dropit.settings = $.extend({}, this.dropit.defaults, options);
+                this.acctdropit.settings = $.extend({}, this.acctdropit.defaults, options);
                 return this.each(function() {
                     var $el = $(this),
                          el = this,
-                         settings = $.fn.dropit.settings;
+                         settings = $.fn.acctdropit.settings;
 
                     // Hide initial submenus
-                    $el.addClass('dropit')
-                    .find('>'+ settings.triggerParentEl +':has('+ settings.submenuEl +')').addClass('dropit-trigger')
-                    .find(settings.submenuEl).addClass('dropit-submenu').hide();
+                    $el.addClass('acctdropit')
+                    .find('>'+ settings.triggerParentEl +':has('+ settings.submenuEl +')').addClass('acctdropit-trigger')
+                    .find(settings.submenuEl).addClass('acctdropit-submenu').hide();
 
                     // Open on click
                     $el.off(settings.action).on(settings.action, settings.triggerParentEl +':has('+ settings.submenuEl +') > '+ settings.triggerEl +'', function(){
                         // Close click menu's if clicked again
-                        if(settings.action == 'click' && $(this).parents(settings.triggerParentEl).hasClass('dropit-open')){
+                        if(settings.action == 'click' && $(this).parents(settings.triggerParentEl).hasClass('acctdropit-open')){
                             settings.beforeHide.call(this);
-                            $(this).parents(settings.triggerParentEl).removeClass('dropit-open').find(settings.submenuEl).hide();
+                            $(this).parents(settings.triggerParentEl).removeClass('acctdropit-open').find(settings.submenuEl).hide();
                             settings.afterHide.call(this);
                             return false;
                         }
 
                         // Hide open menus
                         settings.beforeHide.call(this);
-                        $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
+                        $('.acctdropit-open').removeClass('acctdropit-open').find('.acctdropit-submenu').hide();
                         settings.afterHide.call(this);
 
                         // Open this menu
                         settings.beforeShow.call(this);
-                        $(this).parents(settings.triggerParentEl).addClass('dropit-open').find(settings.submenuEl).show();
+                        $(this).parents(settings.triggerParentEl).addClass('acctdropit-open').find(settings.submenuEl).show();
                         settings.afterShow.call(this);
 
                         return false;
@@ -42,15 +42,15 @@
                     // Close if outside click
                     $(document).on('click', function(){
                         settings.beforeHide.call(this);
-                        $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
+                        $('.acctdropit-open').removeClass('acctdropit-open').find('.acctdropit-submenu').hide();
                         settings.afterHide.call(this);
                     });
 
                     // If hover
                     if(settings.action == 'mouseenter'){
-                        $el.on('mouseleave', '.dropit-open', function(){
+                        $el.on('mouseleave', '.acctdropit-open', function(){
                             settings.beforeHide.call(this);
-                            $(this).removeClass('dropit-open').find(settings.submenuEl).hide();
+                            $(this).removeClass('acctdropit-open').find(settings.submenuEl).hide();
                             settings.afterHide.call(this);
                         });
                     }
@@ -66,12 +66,12 @@
         } else if (typeof method === 'object' || !method) {
             return methods.init.apply(this, arguments);
         } else {
-            $.error( 'Method "' +  method + '" does not exist in dropit plugin!');
+            $.error( 'Method "' +  method + '" does not exist in acctdropit plugin!');
         }
 
     };
 
-    $.fn.dropit.defaults = {
+    $.fn.acctdropit.defaults = {
         action: 'click', // The open action for the trigger
         submenuEl: 'ul', // The submenu element
         triggerEl: 'a', // The trigger element
@@ -83,7 +83,7 @@
         afterHide: function(){} // Triggers before submenu is hidden
     };
 
-    $.fn.dropit.settings = {};
+    $.fn.acctdropit.settings = {};
 
 })(jQuery);
 

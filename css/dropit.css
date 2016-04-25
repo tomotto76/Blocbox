@@ -16,16 +16,6 @@
     display:inline-block;
 }
 
-.cog {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0 0;
-    float:right;
-    display:inline-block;
-
-}
-
-
 
 .dropit .dropit-trigger { position: relative; }
 .dropit .dropit-submenu {
@@ -60,20 +50,6 @@
   top: -8px;
   right: 10px;
  }
-
-.cog .cog-open .cog-submenu:after {
-  content: " ";
-  position: absolute;
-  border-style: solid;
-  border-width: 0 8px 8px;
-  border-color: #FFFFFF transparent;
-  display: block;
-  width: 0;
-  z-index: 25;
-  top: -8px;
-  right: 10px;
- }
-
 
 
  .dropit .dropit-open .dropit-submenu li {

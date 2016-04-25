@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/dropit.css">
+<link rel="stylesheet" href="css/acctdropit.css">
 
 
 </head>
@@ -46,7 +47,7 @@
       <div class="settings">
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
      <p>Joey Kirk</p>
-     <ul class="cog">
+     <ul class="acctdropit">
             <li>
               <a href="#"i class="fa fa-cog"></i></a>
               <ul>
@@ -140,12 +141,13 @@
  </main>
    <script src="js/jquery-2.2.3.min.js"></script>
    <script src="js/dropit.js"></script>
-   <script src="js/dropitcog.js"></script>
+   <script src="js/accountdropit.js"></script>
    <script type="text/javascript">
      $(".menu").dropit();
+     $(".acctdropit").acctdropit();
      $( "#menu").click(function() {
          $("#left-nav").toggleClass("open", 200);
-         $(".cog").dropit();
+
      }); 
  
    </script>
